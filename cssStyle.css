@@ -14,6 +14,11 @@ html, body{
     background-size: cover;
 }
 
+/* .image div img{
+    float: right;
+    margin: 0px;
+} */
+
 .form-div{
     width: 20%;
     margin-top: 11rem;
@@ -78,6 +83,7 @@ input:hover{
     font-size: xx-large;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: orange
 }
 
 .info-mid{
@@ -246,6 +252,10 @@ textarea{
     border: 1px orange solid;
 }
 
+.contact-btn-textarea label {
+    font-size: small;
+}
+
 .credits{
     background-color: #292929;
     color: white;
@@ -259,7 +269,7 @@ textarea{
         padding: 1rem;
     }
     .headline-mid{
-        font-size: large;
+        font-size: x-large;
         font-weight: bold;
         margin-bottom: 1rem;
     }
@@ -302,10 +312,50 @@ textarea{
     }
 
     .features-wrapper{
+        height: 112vh;
         padding-top: 0rem;
         margin-left: 0rem;
         margin-right: 0rem;
     }
+
+    .footer-wrapper{
+        display: inherit;
+    }
+
+    .finfo{
+        margin-top: 0rem;
+        width: auto;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 1rem;
+    }
+
+    .finfo-headline{
+        text-align: center;
+    }
+
+    .fcontact{
+        margin-top: 0rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: auto;
+    }
+
+    .credits{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
+        text-align: center;
+        font-size: small;
+    }
+
+
+
+    .contact-btn-textarea{
+        display: flow-root;
+    }
+
+
 
 
 
