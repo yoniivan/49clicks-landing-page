@@ -1,9 +1,7 @@
 html, body{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.wrapper{
-    border: 3px solid red;
+    margin: 0px;
+    padding: 0px;
 }
 
 .image {
@@ -18,10 +16,10 @@ html, body{
 
 .form-div{
     width: 20%;
-    margin-top: 9rem;
+    margin-top: 11rem;
     margin-right: 10rem;
     display: inline-table;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 1.5rem;
 }
@@ -47,6 +45,13 @@ input{
     padding: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+input:hover{
+    border:2px solid orange !important;
+    opacity: 1;
 }
 
 .btn-submit{
@@ -60,6 +65,7 @@ input{
 }
 
 
+
 .mid{
     padding-left: 15rem;
     padding-top: 1rem;
@@ -69,33 +75,51 @@ input{
 }
 
 .headline-mid{
-    font-size: x-large;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .info-mid{
     font-size: large;
+    margin-bottom: 1rem;
 }
 
 
 .info{
     display: flex;
-    border: 3px solid black;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 2rem;
+}
+
+.headline-info{
+    margin-left: 1rem;
+    width: 30vw;
+}
+
+ul {
+    list-style-image: url('assets/bulit.png');
+}
+
+li{
+    margin-top: 1rem;
+}
+
+li:hover{
+    text-shadow: 0 0 1px black;
+    color: blue;
+    transition: 0.6s;
 }
 
 .list-info{
     width:30%;
     align-items: center;
     padding: 1rem;
-    border: 1px solid green;
-}
-
-ul{
-    /* list-style-image: url('assets/built.png'); */
 }
 
 .text-info{
     padding: 1rem;
-    border: 1px solid blue;
 }
 
 .text-info-p{
@@ -103,7 +127,15 @@ ul{
 }
 
 .features{
-    background-color: #f3f3f3;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.features-header{
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    text-align: center;
+    font-size: x-large;
 }
 
 .features-wrapper{
@@ -116,6 +148,7 @@ ul{
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .features-boxes div{
@@ -123,11 +156,159 @@ ul{
     padding-right: 1rem;
 }
 
+.features-boxes div img:hover {
+    width: 30%;
+    transition: 0.6s;
+}
+
+.features-boxes div h3{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.features-boxes div h3:hover{
+    color:green;
+    transition: 0.6s;
+}
+
 .features-boxes div p{
     opacity: 0.7;
     box-sizing: border-box;
 }
 
+.footer-wrapper{
+    background-color: #363636;
+    display: inline-flex;
+    width: 100%;
+    color: white;
+}
 
+.finfo{
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 15rem;
+    margin-right: 2rem;
+}
+
+.fcontact{
+    margin-top: 2rem;
+    margin-right: 15rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.contact-n-e{
+    display: inline-flex;
+    width: 100%;
+}
+
+.contact-n-e label {
+    font-size: small;
+}
+
+.contact-name{
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.contact-email{
+    padding-left: 1rem;
+    width: 100%;
+}
+
+textarea{
+    width: -webkit-fill-available;
+    padding: 1rem;
+}
+
+.footer-img-name{
+    display: inline-flex;
+}
+
+.footer-details{
+    margin-left: 1rem;
+}
+
+.footer-details span{
+    font-weight: bold;
+}
+
+.footer-details p{
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+.btn-submit-contact{
+    width: 50%;
+    float: right;
+    background-color: orange;
+    border-radius: 4px;
+    border: 1px orange solid;
+}
+
+.credits{
+    background-color: #292929;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 15rem;
+}
+
+@media (max-width: 850px) {
+    .mid{
+        padding: 1rem;
+    }
+    .headline-mid{
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    .info-mid{
+        font-size: medium;
+        margin-bottom: 1rem;
+    }
+
+    .form-div{
+        width: 96%;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        display: inline-table;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        padding: 0.5rem;
+    }
+
+    .info{
+        display: inline-block;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 0rem;
+    }
+
+    .list-info{
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .headline-info{
+        margin-left: 1rem;
+        width: 100%;
+    }
+
+    .features-boxes{
+        display: inline;
+    }
+
+    .features-wrapper{
+        padding-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+
+
+}
 
 

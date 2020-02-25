@@ -10,23 +10,25 @@
     </head>
     
     <body>
-        <div class="wrapper">
+        <div class="wrapper" id="size">
             <div class="image">
 
-                <div class="form-div">
+                <!-- Big screen -->
+
+                <div id="big" class="form-div">
                     <div class="form-headline-div">
                         <h1 class="form-headline">Fill in your name</h1>
                     </div>
                     <div>
-                        <form>
+                        <form name="detailsForm">
                             <label for="fname">First Name*</label><br>
-                            <input type="text" placeholder="First Name"><br>
+                            <input type="text" name="fname" placeholder="First Name" required><br>
                             <label for="lname">Last Name*</label><br>
-                            <input type="text" placeholder="Last Name"><br>
+                            <input type="text" placeholder="Last Name" required><br>
                             <label for="email">E-Mail*</label><br>
-                            <input type="text" placeholder="E-Mail"><br>
+                            <input type="text" placeholder="E-Mail" required><br>
                             <label for="fnumber">Phone Number*</label><br>
-                            <input type="text" placeholder="Phone Number"><br><br>
+                            <input type="text" placeholder="Phone Number" required><br><br>
                             <input type="submit" class="btn-submit" value="Submit"><br>
                         </form>
                     </div>
@@ -35,6 +37,9 @@
                         <span>*Required fields</span>
                     </div>
                 </div>
+
+                <!-- Big screen -->
+
             </div>
 
             <div class="mid">
@@ -50,9 +55,35 @@
                 </div>
             </div>
 
+            <!-- small screen -->
+            <div id="small" class="form-div">
+                <div class="form-headline-div">
+                    <h1 class="form-headline">Fill in your name</h1>
+                </div>
+                <div>
+                    <form name="detailsForm">
+                        <label for="fname">First Name*</label><br>
+                        <input type="text" name="fname" placeholder="First Name" required><br>
+                        <label for="lname">Last Name*</label><br>
+                        <input type="text" placeholder="Last Name" required><br>
+                        <label for="email">E-Mail*</label><br>
+                        <input type="text" placeholder="E-Mail" required><br>
+                        <label for="fnumber">Phone Number*</label><br>
+                        <input type="text" placeholder="Phone Number" required><br><br>
+                        <input type="submit" class="btn-submit" value="Submit"><br>
+                    </form>
+                </div>
+
+                <div>
+                    <span>*Required fields</span>
+                </div>
+            </div>
+
+            <!-- small screen -->
+
             <div class="info">
                 <div class="list-info">
-                    <div>
+                    <div class="headline-info">
                         <h3>Why Generic Real Estate Inc.</h3>
                     </div>
                     <div>
@@ -68,33 +99,84 @@
                 
                 <div class="text-info">
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p class="text-info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam perspiciatis alias debitis sit corrupti non suscipit, error est ullam voluptates enim temporibus recusandae dolor illum ut iusto veniam! Blanditiis?</p>
+                    <p class="text-info-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel maxime impedit maiores, nemo debitis nobis excepturi aliquid, dolor magnam voluptas animi deleniti reprehenderit adipisci iusto tempora itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel maxime impedit maiores, nemo debitis nobis excepturi aliquid, dolor magnam voluptas animi deleniti reprehenderit adipisci iusto tempora itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel maxime impedit maiores, nemo debitis nobis excepturi aliquid, dolor magnam voluptas animi deleniti reprehenderit adipisci iusto tempora itaque.</p>
                 </div>
             </div>
             
             <div class="features">
                 <div class="features-wrapper">
-                    <div>
+                    <div class="features-header">
                         <h3>Our Features</h3>
                     </div>
     
                     <div class="features-boxes">
     
                         <div>
+                            <img src="assets/parking.png" width="20%"/>
                             <h3>Nature All Around You</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deserunt debitis, corporis, ullam quo ratione numquam minima optio perspiciatis.</p>
                         </div>
                         <div>
+                            <img src="assets/tree.png" width="20%"/>
                             <h3>Nature All Around You</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deserunt debitis, corporis, ullam quo ratione numquam minima optio perspiciatis.</p>
                         </div>
                         <div>
+                            <img src="assets/shield.png" width="20%"/>
                             <h3>Nature All Around You</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deserunt debitis, corporis, ullam quo ratione numquam minima optio perspiciatis.</p>
                         </div>
     
                     </div>
                 </div>
+            </div>
+
+            <div class="footer-inc">
+                <div class="footer-wrapper">
+                    <div class="finfo">
+                        <div>
+                            <h3>Our Agent</h3>
+                        </div>
+                        <div class="footer-img-name">
+                            <div>
+                                <img src="https://via.placeholder.com/80"/>
+                            </div>
+                            <div class="footer-details">
+                                <span>John Doe</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt quo nulla culpa rem! Officia.</p>
+                            </div>
+                        </div>
+                        <div><br>
+                            <span><b>Phone:</b> (123) 456 789 000</span><br>
+                            <span><b>E-mail:</b> john.doe@example.com</span><br>
+                            <span><b>Skype:</b> John Doe</span><br>
+                        </div>
+
+                    </div>
+    
+                    <div class="fcontact">
+                        <div class="contact-n-e">
+                            <div class="contact-name">
+                                <label for="yname">Your Name*</label><br>
+                                <input type="text" name="yname" placeholder="Your Name" required><br>
+                            </div>
+
+                            <div class="contact-email">
+                                <label for="email">E-Mail*</label><br>
+                                <input type="text" placeholder="E-Mail" required><br>
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="comment" rows="5" placeholder="Your Message" form="usrform"></textarea>
+                            <input type="submit" class="btn-submit-contact" value="Submit"><br>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="credits">
+                (C) All rights reserved to Yoni Ivan (-:
             </div>
         </div>
     </body>
