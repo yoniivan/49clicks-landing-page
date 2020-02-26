@@ -266,7 +266,12 @@ textarea{
 
 @media (max-width: 850px) {
     .mid{
-        padding: 1rem;
+        padding: 2rem;
+    }
+
+    .detailsForm{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .headline-mid{
         font-size: x-large;
@@ -275,18 +280,17 @@ textarea{
     }
     
     .info-mid{
-        font-size: medium;
+        font-size: small;
         margin-bottom: 1rem;
     }
 
     .form-div{
-        width: 96%;
+        width: 89%;
         margin-top: 0rem;
         margin-right: 0rem;
         display: inline-table;
         background-color: rgba(0, 0, 0, 0.85);
         color: white;
-        padding: 0.5rem;
     }
 
     .info{
@@ -294,6 +298,10 @@ textarea{
         margin-left: 0rem;
         margin-right: 0rem;
         margin-top: 0rem;
+    }
+
+    .text-info{
+        padding: 2rem;
     }
 
     .list-info{
@@ -320,6 +328,8 @@ textarea{
 
     .footer-wrapper{
         display: inherit;
+        width: auto;
+        padding: 1rem;
     }
 
     .finfo{
@@ -354,11 +364,44 @@ textarea{
     .contact-btn-textarea{
         display: flow-root;
     }
-
-
-
-
-
 }
 
+@media (orientation:landscape) and (max-width: 767px){
+    
+    
+    .features-wrapper{
+        height: 220vh;
+        padding-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 
+    .form-div{
+        width: 93.5%;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        display: inline-table;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+    }
+
+    .mid{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .list-info{
+        padding: 3rem;
+    }
+
+    .text-info{
+        padding: 3rem;
+    }
+
+    .footer-wrapper{
+        padding: 1rem;
+        width: auto;
+    }
+}
